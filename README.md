@@ -12,14 +12,14 @@ To install requirements:
 pip3 install -r requirements.txt
 ```
 
-##Folder-generate_noisedata 
+## Folder-generate_noisedata 
 The folder generate_noisedata contains two types of noise, i.e. injecttion noise and noise by mettack. 
 Also, the gae_run.py runs graph auto encoder to find the noisy item after the nosie generated on the feature matrix.
 
-##Folder-denoise
+## Folder-denoise
 Run the main_denoise.py will use the regularized optimization method to denoise the local corrupted featue matrix.
 
-##Folder-class
+## Folder-class
 Run the graph_class.py will test the performance on the denoised dataset.
 
 ## All Experiments
