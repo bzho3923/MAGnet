@@ -1,0 +1,6 @@
+CUDA_VISIBLE_DEVICES=0 python3 /generate_noisedata/gae_run.py --dataset ogbn-arxiv --power 2 --lr 0.0001 --epoch 20000
+###denoise
+CUDA_VISIBLE_DEVICES=0 python3 /denoise/main_denoise.py --dataset ogbn-arxiv  --mask 1 --gtmask 0 --power 2 --gae_epoch 10000 --anomal_conf_prob 0.01 --thres_iter 25
+##gcn class
+CUDA_VISIBLE_DEVICES=0 python3 /class/graph_class.py --dataset ogbn-arxiv --lr 0.01 --wd 0.005 --datatype denoised --lp 0 --lq 2 --power 2 -e 200
+
