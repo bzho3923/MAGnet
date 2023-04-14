@@ -18,7 +18,7 @@ from ogb.nodeproppred import PygNodePropPredDataset, Evaluator
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 import random
 
-##read the cora feature and inject the anomal
+##read the feature matrix and inject the anomal
 ##after the inkection, the anomal dataset will be saved as npy file for further processing
 
 if __name__ == '__main__':
