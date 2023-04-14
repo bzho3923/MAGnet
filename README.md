@@ -23,17 +23,12 @@ Run the main_denoise.py will use the regularized optimization method to denoise 
 Run the graph_class.py will test the performance on the denoised dataset.
 
 ## All Experiments
-To reproduce the results in the paper, you can use the following command
+After sepecify the noise type and create noise on feature matrix, you can use the following command
 
 ```
-python main.py 
+sh run_all.sh
 ```
-The key arguments are: --dataset, --filter_type, --attack, and --GConv_type. For example, if you would like to reproduce the result for DoT with GCN on Cora in Table 1, you can run the following command
-
-```
-python main.py --dataset Cora --filter_type DoT --attack Mix --GConv_type GCN
-```
-Other tunable hyperparameters include: --lr, --wd, --nhid, --dropout, --admm_iter, --rho, --lam, etc.
+to run graph auto encoder, denosing and classification tasks.
 
 
 ## Citation 
